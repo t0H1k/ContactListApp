@@ -14,14 +14,7 @@ struct Person {
     var fullName: String {
         "\(name) \(surname)"
     }
-}
-
-enum Contacts: String {
-    case phone = "phone"
-    case email = "tray"
-}
-
-extension Person {
+    
     static func getContactList() -> [Person] {
         var persons: [Person] = []
         
@@ -44,10 +37,16 @@ extension Person {
                 phoneNumber: phoneNumbers[index],
                 email: emails[index]
             )
-            
             persons.append(person)
         }
-        
         return persons
     }
+    
+
+}
+
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
+    
 }
