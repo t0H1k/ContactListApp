@@ -18,8 +18,8 @@ class TabBarViewController: UITabBarController {
         guard let contactListOne = viewControllers?.first as? ContactListOneViewController else { return }
         guard let contactListTwo = viewControllers?.last as? ContactListTwoViewController else { return }
         
-        let persons = Person.getContactList()
-        contactListOne.persons = persons
-        contactListTwo.persons = persons
+        let mixesContactList = Person.getContactList()
+        contactListOne.persons = mixesContactList
+        contactListTwo.persons = mixesContactList
     }
 }

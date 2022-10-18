@@ -25,10 +25,10 @@ class ContactListTwoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let contactList = tableView.dequeueReusableCell(withIdentifier: "ContactListTwo", for: indexPath)
         
         let person = persons[indexPath.section]
-        var content = cell.defaultContentConfiguration()
+        var content = contactList.defaultContentConfiguration()
         
         switch indexPath.row {
         case 0:
@@ -39,9 +39,9 @@ class ContactListTwoViewController: UITableViewController {
             content.image = UIImage(systemName: Contacts.email.rawValue)
         }
         
-        cell.contentConfiguration = content
+        contactList.contentConfiguration = content
         
-        return cell
+        return contactList
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

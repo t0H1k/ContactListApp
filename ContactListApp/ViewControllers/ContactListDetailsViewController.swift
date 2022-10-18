@@ -21,6 +21,4 @@ class ContactListDetailsViewController: UIViewController {
         phoneNumberLabel.text = "Phone number: \(person.phoneNumber)"
         emailLabel.text = "Email: \(person.email)"
     }
-
-
 }
