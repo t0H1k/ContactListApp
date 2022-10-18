@@ -28,6 +28,4 @@ class DataManager {
         "123@mail.ru", "qwe@@mail.ru", "000000@mail.ru", "vVv@me.com",
         "yqwyeyq@me.com", "0@me.com", "ggg@gmail.com", "yandex@gmail.com",
         "mail@gmail.com", "apple@yandex.ru"]
-    
-    private init() {}
 }
